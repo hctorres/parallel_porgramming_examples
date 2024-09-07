@@ -20,42 +20,6 @@ void check_result(const std::vector<double>& result_vector, const double truth_v
     }
   }
 
-  //// Index based loop for showing the index that caused the error
-  //for (std::vector<double>::size_type i = 0; i < result.size(); ++i) {
-  //    if (result[i] != truth_value) {
-  //        std::string error_message;
-  //        error_message += std::string(80,'#') + "\n";
-  //        error_message += "Error: \n";
-  //        error_message += std::string(80,'#') + "\n";
-  //        error_message += "Value in result does not match truth value.\n";
-  //        error_message += "result[" + std::to_string(i) + "] = " + std::to_string(result[i]) + "\n";
-  //        error_message += "truth_value = " + std::to_string(truth_value) + "\n";
-
-  //        throw std::runtime_error(error_message);
-  //    }
-  //}
-
-  //try {
-  //  // Index based loop for showing the index that caused the error
-  //  for (std::vector<double>::size_type i = 0; i < result.size(); ++i) {
-  //      if (result[i] != truth_value) {
-  //          std::string error_message;
-  //          error_message += std::string(80,'#') + "\n";
-  //          error_message += "Error: \n";
-  //          error_message += std::string(80,'#') + "\n";
-  //          error_message += "Value in result does not match truth value.\n";
-  //          error_message += "result[" + std::to_string(i) + "] = " + std::to_string(result[i]) + "\n";
-  //          error_message += "truth_value = " + std::to_string(truth_value) + "\n";
-
-  //          throw std::runtime_error(error_message);
-  //      }
-  //  }
-  //}
-  //catch (std::exception& e)
-  //{
-  //  std::cout << e.what() << std::endl;
-  //  std::terminate;
-  //}
 }
 
 int main() {
