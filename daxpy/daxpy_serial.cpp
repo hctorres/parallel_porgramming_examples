@@ -25,7 +25,7 @@ void check_result(const std::vector<double>& result_vector, const double truth_v
 int main() {
 
   // Input
-  std::size_t vector_size = pow(10,6);
+  std::size_t vector_size = pow(10,8);
   double a = 2.0;
   double x_initial_value = 1.0;
   double y_initial_value = 1.0;
