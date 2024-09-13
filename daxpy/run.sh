@@ -5,8 +5,8 @@ echo "#########"
 echo "Serial"
 echo "#########"
 ./daxpy_serial
-echo ""
 
+echo ""
 echo "#########"
 echo "OpenMP"
 echo "#########"
@@ -16,8 +16,8 @@ do
   OMP_NUM_THREADS=${np} ./daxpy_OpenMP
   echo ""
 done
-echo ""
 
+echo ""
 echo "#########"
 echo "MPI"
 echo "#########"
@@ -27,3 +27,9 @@ do
   mpiexec -n ${np} ./daxpy_MPI
   echo ""
 done
+
+echo ""
+echo "#########"
+echo "CUDA"
+echo "#########"
+./daxpy_CUDA
